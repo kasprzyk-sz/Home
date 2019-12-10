@@ -4,85 +4,403 @@ date: 2018-08-22 12:24:50
 layout: layouts/base.njk
 templateEngineOverride: njk, md
 ---
+<style>
+    img {
+        max-width: 100%;
+    }
 
-{% render '@vf-intro', {"vf_intro_phase": "alpha", "vf_intro_heading": siteConfig.siteInformation.title,
-  "vf_intro_lede": siteConfig.siteInformation.short_description,
-  "vf_intro_text": [
-    "☝️ that also means dynamic building of just the CSS and JS you need."
-  ]
-} %}
+    article .article-summary {
+        background-color: #fff;
+        padding: 0 10px;
+    }
 
-<section class="embl-grid embl-grid--has-centered-content">
-  <div>
-    <!-- empty -->
-  </div>
-  <div class="vf-content">
-  {% markdown %}
+    .events .vf-box {
+        background-color: #fff;
+    }
+</style>
 
-  ## Quickstart
-
-  ```
-
-      yarn create @visual-framework/vf-eleventy your-new-site-name embl-eleventy   
-
-  ```
-
-  This will install a new [`embl-eleventy`](https://github.com/embl-communications/embl-eleventy/) to a folder named `your-new-site-name`.
-
-  Then follow the onscreen prompts and links below to develop and configure.
-
-  ## Longer install?
-
-  The above too easy or have questions? [Read this guide](https://github.com/visual-framework/vf-eleventy#1-creating-a-new-project-powered-by-vf-eleventy).
-
-  {% endmarkdown %}
-
-  </div>
+<section class="vf-grid vf-grid__col-2 vf-content vf-u-background-color-ui--grey">
+    <div class="vf-u-padding__left--md">
+        <h2>European Molecular Biology Laboratory</h2>
+        <h3>The future of biology, now.</h3>
+        <br>
+        <p>&gt; Driving innovation</p>
+        <p>&gt; World-class biological research</p>
+        <p>&gt; State-of-the-art technologies</p>
+        <p>&gt; Exceptional scientific talent</p>
+        <p>&gt; Training the scientists of tomorrow</p>
+    </div>
+    <div>
+        <img src="https://www.smartinsurtech.de/smartinsurtech/uploads/2017/02/placeholder.jpg" style="width: 100%;">
+        <p>With <a href="#" class="vf-link">27 member states</a>, laboratories at <a href="#" class="vf-link">six
+                locations</a> across Europe and thousands of scientists and engineers working together, the European
+            Molecular Biology Laboratory is a powerhouse of biological expertise.</p>
+        <p>Publishing hundreds of <a href="#" class="vf-link">research articles</a> and hosting dozens of <a href="#"
+                class="vf-link">conferences</a> every year, EMBL is pouring out biological insights, and training
+            Europe’s future scientific talent.</p>
+    </div>
 </section>
 
+<section class="vf-grid vf-grid__col-6 vf-u-margin__top--xxl">
+    <div class="vf-box">
+        <h3 class="vf-box__heading">XXX</h3>
+        <p class="vf-box__text">Researchers</p>
+    </div>
+    <div class="vf-box">
+        <h3 class="vf-box__heading">XXX</h3>
+        <p class="vf-box__text">peer-reviewed papers</p>
+    </div>
+    <div class="vf-box">
+        <h3 class="vf-box__heading">6000</h3>
+        <p class="vf-box__text">Mice</p>
+    </div>
+    <div class="vf-box">
+        <h3 class="vf-box__heading">30</h3>
+        <p class="vf-box__text">Annual conferences</p>
+    </div>
+    <div class="vf-box">
+        <h3 class="vf-box__heading">XXX</h3>
+        <p class="vf-box__text">PHDs</p>
+    </div>
+    <div class="vf-box">
+        <h3 class="vf-box__heading">27</h3>
+        <p class="vf-box__text">Members states</p>
+    </div>
+</section>
 
-<section class="vf-intro | embl-grid embl-grid--has-centered-content">
+<section class="vf-grid vf-grid__col-4 vf-content vf-u-background-color-ui--grey vf-u-padding__top--md vf-u-padding__right--md">
+    <h1 class="vf-text vf-text-heading--3">Featured news</h1>
+    <article class="vf-summary vf-summary--article">
+        <div class="post-image">
+            <a href="#">
+                <img src="https://www.smartinsurtech.de/smartinsurtech/uploads/2017/02/placeholder.jpg">
+            </a>
+        </div>
+        <div class="article-summary">
+            <h3 class="vf-text vf-text-heading--4 | vf-u-margin__bottom--sm vf-u-margin__top--sm">
+                <a href="#" class="vf-summary__link">Convention on the Rights of the Child stored in DNA</a>
+                <p class="vf-summary__text | vf-u-margin__bottom--sm">Imaging technologies have a central role in
+                    driving fundamental research and applied innovations in both biological and biomedical research</p>
+            </h3>
+        </div>
+    </article>
+    <article class="vf-summary vf-summary--article">
+        <div class="post-image">
+            <a href="#">
+                <img src="https://www.smartinsurtech.de/smartinsurtech/uploads/2017/02/placeholder.jpg">
+            </a>
+        </div>
+        <div class="article-summary">
+            <h3 class="vf-text vf-text-heading--4 | vf-u-margin__bottom--sm vf-u-margin__top--sm">
+                <a href="#" class="vf-summary__link">Understanding embryo development in mice</a>
+                <p class="vf-summary__text | vf-u-margin__bottom--sm">Imaging technologies have a central role in
+                    driving fundamental research and applied innovations in both biological and biomedical research</p>
+            </h3>
+        </div>
+    </article>
+    <article class="vf-summary vf-summary--article">
+        <div class="post-image">
+            <a href="#">
+                <img src="https://www.smartinsurtech.de/smartinsurtech/uploads/2017/02/placeholder.jpg">
+            </a>
+        </div>
+        <div class="article-summary">
+            <h3 class="vf-text vf-text-heading--4 | vf-u-margin__bottom--sm vf-u-margin__top--sm">
+                <a href="#" class="vf-summary__link">Leukaemia detectable years before diagnosis</a>
+                <p class="vf-summary__text | vf-u-margin__bottom--sm">Imaging technologies have a central role in
+                    driving fundamental research and applied innovations in both biological and biomedical research</p>
+            </h3>
+        </div>
+    </article>
+</section>
 
-<div>
-  <!-- empty -->
-</div>
-<div class="vf-content">
-
-## What you get
-
-- the Eleventy static site generator
-- access to the Visual Framework component system
-
-### Component installation
-
-To add a component you can use npm/Yarn or install it manually.
-
-In either case you'll need to re-run `gulp dev` to ensure the component is fully loaded.
-
-- installation: `yarn add @visual-framework/embl-logo`
-- updating: `yarn upgrade-interactive --latest`
-
-### Manual installation for customisation
-
-1. Download a pattern
-2. Copy it to `./src/components/vf-component-name`
-
-### Add your own local component
-
-You can add a custom VF-compatible component to `./src/components` and use it in
-your site.
-
-- `gulp vf-component`
-
-You'll find a `vf-sample` component there, we've used it below:
-
-<div class="vf-box">
-{% verbatim %}
-Code: {% render "@vf-sample", {text: "with some text"} %}
-{% endverbatim %}
-
-Returns: {% render "@vf-sample", {text: "with some text"} %}
-</div>
-
-</div>
+<section class="vf-intro | embl-grid embl-grid--has-centered-content vf-u-margin__top--xxl">
+    <div>
+        <h1 class="vf-text vf-text-heading--3">Recent news</h1>
+    </div>
+    <div>
+        <link rel="import"
+            href="https://dev.content.embl.org/api/v1/pattern.html?filter-content-type=article&filter-field-value%5Bfield_article_type%5D=article_timely&filter-fields-exists=field_display_title%2Cfield_teaser%2Cfield_canonical_location&limit=3&pattern=vf-news-item-default&sort-field-value%5Bcreated%5D=DESC"
+            data-target="self" data-embl-js-content-hub-loader>
+        <a id="harsh" href="#" class="vf-link ">See all EMBL news</a>
+    </div>
+</section>
+<section class="embl-grid vf-u-background-color-ui--grey vf-u-padding__top--md vf-u-padding__right--md events">
+    <div>
+        <h1 class="vf-text vf-text-heading--3">Events</h1>
+        <p class="vf-text--body vf-text-body--3">EMBL’s comprehensive conference programme runs throughout the year.
+            Conferences are hosted at EMBL’s Hamburg, Heidelberg, and Barcelona sites.</p>
+    </div>
+    <div class="vf-u-padding__bottom--md">
+        <div class="vf-grid vf-u-padding__bottom--md" style="position: relative;">
+            <img src="https://www.smartinsurtech.de/smartinsurtech/uploads/2017/02/placeholder.jpg"
+                style="width: 100%; max-height: 300px;">
+            <div class="vf-u-margin__left--md" style="position: absolute; top: 150px">
+                <p class="vf-box__text">27th November 2019</p>
+                <a href="#" class="vf-link">
+                    <h3 class="vf-box__heading">Expanding the Druggable Proteome with Chemical Biology</h3>
+                </a>
+                <p class="vf-box__text">EMBL Course</p>
+            </div>
+        </div>
+        <div class="vf-grid vf-grid__col-3">
+            <div class="vf-box vf-box--inlay">
+                <p class="vf-box__text">27th November 2019</p>
+                <a href="#" class="vf-link">
+                    <h3 class="vf-box__heading">Deep Learning for Image Analysis</h3>
+                </a>
+                <p class="vf-box__text">EMBL Course</p>
+            </div>
+            <div class="vf-box vf-box--inlay">
+                <p class="vf-box__text">28th November 2019</p>
+                <a href="#" class="vf-link">
+                    <h3 class="vf-box__heading">Introduction to RNA-Seq and Functional Interpretation</h3>
+                </a>
+                <p class="vf-box__text">EMBL Conference</p>
+            </div>
+            <div class="vf-box vf-box--inlay">
+                <p class="vf-box__text">27th December 2019</p>
+                <a href="#" class="vf-link">
+                    <h3 class="vf-box__heading">Exploratory Analysis of Biological Data: Data Carpentry</h3>
+                </a>
+                <p class="vf-box__text">EMBO-EMBL Symposium</p>
+            </div>
+        </div>
+        <a id="harsh" href="#" class="vf-link" style="float: right" ;>See all Events</a>
+    </div>
+</section>
+<section class="vf-u-padding__bottom--xxl">
+    <h2 class="vf-text vf-text-heading--3">Research</h2>
+    <p class="vf-text--body vf-text-body--2">From genomes to ecosystems</p>
+    <p class="vf-text--body vf-text-body--3">Across six sites in Europe, more than 1600 researchers are studying the
+        mysteries of life</p>
+    <div class="vf-grid vf-grid__col-4 | vf-u-margin__bottom--xxl | vf-u-margin__top--xxl">
+        <div class="vf-card vf-card--topic">
+            <img src="http://www.stleos.uq.edu.au/wp-content/uploads/2016/08/image-placeholder-350x350.png" alt=""
+                class="vf-card__image">
+            <div class="vf-card__content">
+                <h3 class="vf-card__title">
+                    Cell biology and biophysics
+                </h3>
+                <p class="vf-card__text">
+                    two lines of text
+                </p>
+            </div>
+        </div>
+        <div class="vf-card vf-card--topic">
+            <img src="http://www.stleos.uq.edu.au/wp-content/uploads/2016/08/image-placeholder-350x350.png" alt=""
+                class="vf-card__image">
+            <div class="vf-card__content">
+                <h3 class="vf-card__title">
+                    Developmental biology
+                </h3>
+                <p class="vf-card__text">
+                    two lines of text
+                </p>
+            </div>
+        </div>
+        <div class="vf-card vf-card--topic">
+            <img src="http://www.stleos.uq.edu.au/wp-content/uploads/2016/08/image-placeholder-350x350.png" alt=""
+                class="vf-card__image">
+            <div class="vf-card__content">
+                <h3 class="vf-card__title">
+                    Directors' research
+                </h3>
+                <p class="vf-card__text">
+                    two lines of text
+                </p>
+            </div>
+        </div>
+        <div class="vf-card vf-card--topic">
+            <img src="http://www.stleos.uq.edu.au/wp-content/uploads/2016/08/image-placeholder-350x350.png" alt=""
+                class="vf-card__image">
+            <div class="vf-card__content">
+                <h3 class="vf-card__title">
+                    Genome biology
+                </h3>
+                <p class="vf-card__text">
+                    two lines of text
+                </p>
+            </div>
+        </div>
+    </div>
+    <a id="harsh" href="#" class="vf-link" style="float: right" ;>See all research topics</a>
+</section>
+<section class="embl-grid vf-u-background-color-ui--grey vf-u-padding__top--md vf-u-padding__right--md events">
+    <div>
+        <h1 class="vf-text vf-text-heading--3">Services</h1>
+        <p class="vf-text--body vf-text-body--3">Powering world-class research through tools, data and facilities</p>
+    </div>
+    <div>
+        <div class="vf-grid vf-grid__col-2" style="padding-left: 50px;">
+            <div class="vf-links">
+                <ul class="vf-links__list | vf-list">
+                    <li class="vf-list__item">
+                        <a class="vf-list__link" href="JavaScript:Void(0);">
+                            Service 1 </a>
+                    </li>
+                    <li class="vf-list__item">
+                        <a class="vf-list__link" href="JavaScript:Void(0);">
+                            Service 2 </a>
+                    </li>
+                    <li class="vf-list__item">
+                        <a class="vf-list__link" href="JavaScript:Void(0);">
+                            Service 3 </a>
+                    </li>
+                    <li class="vf-list__item">
+                        <a class="vf-list__link" href="JavaScript:Void(0);">
+                            Service 4 </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="vf-links">
+                <ul class="vf-links__list | vf-list">
+                    <li class="vf-list__item">
+                        <a class="vf-list__link" href="JavaScript:Void(0);">
+                            Service 5 </a>
+                    </li>
+                    <li class="vf-list__item">
+                        <a class="vf-list__link" href="JavaScript:Void(0);">
+                            Service 6 </a>
+                    </li>
+                    <li class="vf-list__item">
+                        <a class="vf-list__link" href="JavaScript:Void(0);">
+                            Service 7 </a>
+                    </li>
+                    <li class="vf-list__item">
+                        <a class="vf-list__link" href="JavaScript:Void(0);">
+                            Service 8 </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="embl-grid vf-u-padding__top--md vf-u-padding__right--md training">
+    <div>
+        <h1 class="vf-text vf-text-heading--3">Education and Training</h1>
+        <p class="vf-text--body vf-text-body--3">Supporting the scientists of tomorrow</p>
+        <p class="vf-text--body vf-text-body--3">EMBL runs dozens of training courses every year, on topics from
+            bacterial genomics
+            to presentation skills
+        </p>
+    </div>
+    <div>
+        <div class="vf-grid vf-grid__col-3" style="padding-left: 50px;">
+            <div>
+                <h1 class="vf-text vf-text-heading--4">Conferences</h1>
+                <div class="vf-box vf-box--inlay">
+                    <h3 class="vf-box__heading">Conference title</h3>
+                    <p class="vf-box__text">18th December 2019</p>
+                </div>
+                <div class="vf-box vf-box--inlay">
+                    <h3 class="vf-box__heading">Conference title</h3>
+                    <p class="vf-box__text">18th December 2019</p>
+                </div>
+                <div class="vf-box vf-box--inlay">
+                    <h3 class="vf-box__heading">Conference title</h3>
+                    <p class="vf-box__text">18th December 2019</p>
+                </div>
+            </div>
+            <div>
+                <h1 class="vf-text vf-text-heading--4">Seminars</h1>
+                <div class="vf-box vf-box--inlay">
+                    <h3 class="vf-box__heading">Seminar title</h3>
+                    <p class="vf-box__text">18th December 2019</p>
+                </div>
+                <div class="vf-box vf-box--inlay">
+                    <h3 class="vf-box__heading">Seminar title</h3>
+                    <p class="vf-box__text">18th December 2019</p>
+                </div>
+                <div class="vf-box vf-box--inlay">
+                    <h3 class="vf-box__heading">Seminar title</h3>
+                    <p class="vf-box__text">18th December 2019</p>
+                </div>
+            </div>
+            <div>
+                <h1 class="vf-text vf-text-heading--4">Courses</h1>
+                <div class="vf-box vf-box--inlay">
+                    <h3 class="vf-box__heading">Course title</h3>
+                    <p class="vf-box__text">18th December 2019</p>
+                </div>
+                <div class="vf-box vf-box--inlay">
+                    <h3 class="vf-box__heading">Course title</h3>
+                    <p class="vf-box__text">18th December 2019</p>
+                </div>
+                <div class="vf-box vf-box--inlay">
+                    <h3 class="vf-box__heading">Course title</h3>
+                    <p class="vf-box__text">18th December 2019</p>
+                </div>
+            </div>
+        </div>
+        <a id="harsh" href="#" class="vf-link" style="float: right" ;>See all upcoming training events at EMBL</a>
+</section>
+<section class="vf-grid" style="position: relative;">
+    <img src="https://www.smartinsurtech.de/smartinsurtech/uploads/2017/02/placeholder.jpg" style="width: 100%;">
+    <div style="position: absolute; top: 150px; left: 550px;">
+        Image gallery
+    </div>
+</section>
+<section class="embl-grid vf-u-margin__top--xxl">
+    <div>
+        <h1 class="vf-text vf-text-heading--3">About EMBL</h1>
+    </div>
+    <div>
+        <div class="vf-grid | vf-grid__col-3">
+        <div>
+                    <div class="vf-links">
+                <ul class="vf-links__list | vf-list">
+                    <li class="vf-list__item">
+                        <a class="vf-list__link" href="JavaScript:Void(0);">
+                            Link </a>
+                    </li>
+                    <li class="vf-list__item">
+                        <a class="vf-list__link" href="JavaScript:Void(0);">
+                            Link </a>
+                    </li>
+                    <li class="vf-list__item">
+                        <a class="vf-list__link" href="JavaScript:Void(0);">
+                            Link </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+                            <div class="vf-links">
+                <ul class="vf-links__list | vf-list">
+                    <li class="vf-list__item">
+                        <a class="vf-list__link" href="JavaScript:Void(0);">
+                            Link </a>
+                    </li>
+                    <li class="vf-list__item">
+                        <a class="vf-list__link" href="JavaScript:Void(0);">
+                            Link </a>
+                    </li>
+                    <li class="vf-list__item">
+                        <a class="vf-list__link" href="JavaScript:Void(0);">
+                            Link </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+                            <div class="vf-links">
+                <ul class="vf-links__list | vf-list">
+                    <li class="vf-list__item">
+                        <a class="vf-list__link" href="JavaScript:Void(0);">
+                            Link </a>
+                    </li>
+                    <li class="vf-list__item">
+                        <a class="vf-list__link" href="JavaScript:Void(0);">
+                            Link </a>
+                    </li>
+                    <li class="vf-list__item">
+                        <a class="vf-list__link" href="JavaScript:Void(0);">
+                            Link </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
 </section>
